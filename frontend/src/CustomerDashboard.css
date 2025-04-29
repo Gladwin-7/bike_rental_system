@@ -1,0 +1,35 @@
+.cust-dash       { max-width:1080px; margin:auto; padding:1.5rem; font-family:sans-serif; }
+.flex-between    { display:flex; justify-content:space-between; align-items:center; }
+
+/* buttons */
+.btn             { border:none; cursor:pointer; padding:0.45rem 0.9rem; border-radius:0.5rem; }
+.primary         { background:#2563eb; color:#fff; }
+.logout          { background:#dc2626; color:#fff; }
+.danger          { background:#ef4444; color:#fff; }
+.yes             { background:#16a34a; color:#fff; }
+.no              { background:#9ca3af; color:#fff; }
+
+/* filter & tabs */
+.filter          { margin:1rem 0; }
+.tabs            { display:flex; gap:0.5rem; margin-bottom:1rem; }
+.tabs button     { background:#e2e8f0; padding:0.4rem 0.8rem; border:none; border-radius:0.4rem; }
+.tabs .active    { background:#2563eb; color:#fff; }
+
+/* card grid */
+.grid            { display:grid; gap:1rem; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
+.card            { background:#fff; padding:1rem; border-radius:0.75rem; box-shadow:0 2px 6px rgba(0,0,0,.06);
+                   display:flex; flex-direction:column; gap:0.4rem; }
+.card.rented     { border-left:4px solid #2563eb; }
+.center          { text-align:center; }
+
+/* errors */
+.error           { color:#dc2626; }
+.error.center    { text-align:center; }
+
+/* modal buttons */
+.btn-row         { display:flex; gap:1rem; margin-top:1rem; }
+
+/* mobile tweak */
+@media (max-width:600px){
+  .grid { grid-template-columns:1fr; }
+}

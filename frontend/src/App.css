@@ -1,0 +1,88 @@
+/* General container for the entire app */
+.container {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Centered and minimalistic login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6b7280, #a1a1aa);
+}
+
+/* Simple and clean login box */
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Login field styling */
+.login-field {
+  margin-bottom: 15px;
+}
+
+/* Input label styling */
+.input-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Input field styling */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.login-box button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-box button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Radio button styling */
+.login-field label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.login-field label input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Login header */
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+  font-size: 24px;
+}

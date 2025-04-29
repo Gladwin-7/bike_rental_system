@@ -1,0 +1,39 @@
+/* Layout */
+.dashboard         { max-width:1200px; margin:auto; padding:1.5rem; font-family:sans-serif; }
+.flex-between       { display:flex; justify-content:space-between; align-items:center; }
+.flex-end           { display:flex; justify-content:flex-end; }
+.card               { background:#fff; padding:1.25rem 1.5rem; margin-top:1.5rem;
+                      border-radius:0.75rem; box-shadow:0 2px 6px rgba(0,0,0,.08); }
+
+/* Header */
+h1 { font-size:1.8rem; margin:0; }
+
+/* Form grid */
+.grid-form          { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+                      gap:1rem; margin-top:1rem; }
+input, select       { padding:0.45rem 0.6rem; border:1px solid #cbd5e1; border-radius:0.5rem; }
+
+/* Table */
+.table-wrap         { overflow-x:auto; margin-top:1rem; }
+table               { width:100%; border-collapse:collapse; }
+th,td               { padding:0.55rem 0.8rem; border-bottom:1px solid #e2e8f0; text-align:left; }
+tr:hover            { background:#f9fafb; }
+
+/* Buttons */
+.btn                { border:none; cursor:pointer; border-radius:0.5rem; font-size:0.9rem;
+                      padding:0.45rem 0.9rem; }
+.primary            { background:#2563eb; color:#fff; }
+.secondary          { background:#e2e8f0; }
+.logout             { background:#dc2626; color:#fff; }
+.danger             { background:#ef4444; color:#fff; }
+.yes                { background:#16a34a; color:#fff; }
+.no                 { background:#9ca3af; color:#fff; }
+.sm                 { font-size:0.75rem; padding:0.3rem 0.6rem; }
+
+/* Modal utilities (assumes your Modal wrapper has .modal class if needed) */
+.btn-row            { display:flex; gap:1rem; margin-top:1rem; }
+
+/* Responsive tweaks */
+@media (max-width:600px){
+  .grid-form { grid-template-columns:1fr; }
+}
